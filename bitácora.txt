@@ -1,0 +1,53 @@
+Necesito que crear un panel de configuración para el microfono que tendría que controlar la frecuencia y la amplitud del microfono o entrada de audio. Éste panel tiene que abrirse y cerrarse con la letra "p", no toques ni modifiques nada mas que no sea necesario del código.
+
+-----
+
+Revisando el archivo principal y la lógica de entrada de audio para agregar solo lo necesario.
+
+Read [](file:///c%3A/Users/santi/Downloads/interferencescinqfinal/interferencescinq.js#1-1), lines 1 to 260
+
+Read [](file:///c%3A/Users/santi/Downloads/interferencescinqfinal/interferencescinq.js#260-260), lines 260 to 337
+
+Voy a revisar el gestor de señal para asegurar que los controles de rango se integren sin romper la lógica.
+
+Read [](file:///c%3A/Users/santi/Downloads/interferencescinqfinal/GestorSenial.js)
+
+Estoy añadiendo el panel de configuración y los controles de teclado y clic necesarios en interferencescinq.js.
+
+Replacing 51 lines with 193 lines in [](file:///c%3A/Users/santi/Downloads/interferencescinqfinal/interferencescinq.js)
+
+
+```
+
+```
+Verificando la integración del nuevo panel y las funciones agregadas para asegurar que no haya errores de sintaxis.
+
+Read [](file:///c%3A/Users/santi/Downloads/interferencescinqfinal/interferencescinq.js)
+
+Arreglando para que el panel también se muestre antes de iniciar el audio.
+
+Replacing 9 lines with 12 lines in [](file:///c%3A/Users/santi/Downloads/interferencescinqfinal/interferencescinq.js)
+
+
+```
+
+```
+## Hecho
+
+- Añadí un panel de configuración en interferencescinq.js
+- Se abre y cierra con la tecla `p`
+- El panel controla:
+  - `umbralRuido`
+  - `AMP_MIN`
+  - `AMP_MAX`
+  - `NOTA_MIN`
+  - `NOTA_MAX`
+
+## Uso
+
+- Presioná `p` para mostrar/ocultar el panel
+- Click en los botones `-` / `+` dentro del panel para ajustar los valores
+
+No modifiqué otras partes del código que no eran necesarias.
+
+Made changes.
